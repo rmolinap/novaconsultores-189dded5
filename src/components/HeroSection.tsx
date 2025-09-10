@@ -4,30 +4,15 @@ import heroImage from "@/assets/hero-automation.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 to-slate-800">
-      <div className="absolute inset-0 overflow-hidden">
-        <img
-          src={heroImage}
-          alt="Automatización inteligente de procesos"
-          className="w-full h-full object-cover opacity-10"
-        />
-      </div>
-      
-      <div className="relative z-10 container mx-auto px-6 py-20">
+      <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
+          <div className="mb-12">
             <img
               src="/lovable-uploads/2c906cb0-98a3-481d-ae72-dafc62f2cc9e.png"
               alt="Nova Consultores Logo"
-              className="w-32 h-32 mx-auto mb-6"
+              className="w-48 h-48 mx-auto mb-8"
             />
           </div>
-          
-          <h1 className="text-6xl md:text-8xl font-bold font-display text-white mb-2 leading-tight">
-            Nova
-          </h1>
-          <p className="text-2xl md:text-3xl font-light text-white/80 mb-8 tracking-wide">
-            CONSULTORES
-          </p>
           
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
             Automatización inteligente para crecer sin fricciones
