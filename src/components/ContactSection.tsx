@@ -17,7 +17,7 @@ const ContactSection = () => {
           <div className="mb-12">
             <Button variant="secondary" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
               <Calendar className="w-5 h-5 mr-2" />
-              Agenda tu consulta gratuita
+              Agenda tu consultoría inicial
             </Button>
           </div>
 

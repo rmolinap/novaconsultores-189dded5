@@ -8,13 +8,23 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background font-sans scroll-smooth">
       <HeroSection />
-      <ValueProposition />
-      <Specializations />
-      <ProcessSection />
-      <TestimonialsSection />
-      <ContactSection />
+      <div className="animate-fade-in">
+        <ValueProposition />
+      </div>
+      <div className="animate-fade-in">
+        <Specializations />
+      </div>
+      <div className="animate-fade-in">
+        <ProcessSection />
+      </div>
+      <div className="animate-fade-in">
+        <TestimonialsSection />
+      </div>
+      <div className="animate-fade-in">
+        <ContactSection />
+      </div>
       <Footer />
     </div>
   );
