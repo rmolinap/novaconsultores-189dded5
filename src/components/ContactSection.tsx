@@ -43,7 +43,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm">Consulta inicial</p>
-                <p className="text-white font-medium">Completamente gratuita</p>
+                <p className="text-white font-medium">Empieza a transformar tu negocio</p>
               </div>
             </div>
           </div>
