@@ -1,18 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Phone } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section className="py-20 bg-primary">
+  return <section className="py-20 bg-primary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             ¿Listo para automatizar tu empresa?
           </h2>
-          <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Agenda una consulta gratuita y descubre cómo podemos transformar tus procesos 
-            en ventajas competitivas que impulsen tu crecimiento.
-          </p>
+          <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">Agenda tu consulta inicial y descubre cómo podemos transformar tus procesos en ventajas competitivas que impulsen tu crecimiento.</p>
 
           <div className="mb-12">
             <Button variant="secondary" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
@@ -54,8 +49,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
