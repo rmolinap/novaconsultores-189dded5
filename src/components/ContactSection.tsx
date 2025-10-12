@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 const ContactSection = () => {
+  const navigate = useNavigate();
+
   return <section className="py-20 bg-primary">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
@@ -10,7 +13,12 @@ const ContactSection = () => {
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">Agenda tu consulta inicial y descubre cómo podemos transformar tus procesos en ventajas competitivas que impulsen tu crecimiento.</p>
 
           <div className="mb-12">
-            <Button variant="secondary" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90"
+              onClick={() => navigate("/appointment")}
+            >
               <Calendar className="w-5 h-5 mr-2" />
               Agenda tu consultoría inicial
             </Button>

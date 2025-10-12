@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-automation.jpg";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-slate-900 to-slate-800">
       <div className="container mx-auto px-6 py-20">
@@ -19,7 +22,12 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6 hover-scale">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-6 hover-scale"
+              onClick={() => navigate("/appointment")}
+            >
               Agenda tu consultoría inicial
             </Button>
           </div>
