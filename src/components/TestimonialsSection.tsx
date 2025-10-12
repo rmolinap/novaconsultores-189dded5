@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
       quote: "Nova Consultores transformó completamente nuestros procesos logísticos. Ahora tenemos visibilidad total de inventarios y hemos reducido errores en un 90%.",
       author: "Daniella Vogliotti",
       position: "Logistics Specialist",
-      company: "LogiTech México"
+      company: "Kasmart USA Inc."
     },
     {
       quote: "La automatización de nuestros procesos financieros nos ha ahorrado 15 horas semanales y mejorado significativamente la precisión de nuestros reportes.",
