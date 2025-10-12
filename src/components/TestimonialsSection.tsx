@@ -34,25 +34,20 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index}
-              className="bg-card rounded-xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 relative"
-            >
-              <Quote className="absolute top-6 right-6 w-8 h-8 text-secondary/20" />
-              
-              <blockquote className="text-muted mb-6 leading-relaxed text-lg">
-                "{testimonial.quote}"
-              </blockquote>
-              
-              <div className="border-t border-border pt-6">
-                <div className="font-semibold text-primary">{testimonial.author}</div>
-                <div className="text-muted text-sm">{testimonial.position}</div>
-                <div className="text-secondary font-medium text-sm">{testimonial.company}</div>
-              </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-card rounded-xl p-12 shadow-card hover:shadow-elegant transition-all duration-300 relative">
+            <Quote className="absolute top-8 right-8 w-12 h-12 text-secondary/20" />
+            
+            <blockquote className="text-muted mb-8 leading-relaxed text-xl">
+              "{testimonials[0].quote}"
+            </blockquote>
+            
+            <div className="border-t border-border pt-6">
+              <div className="font-semibold text-primary text-lg">{testimonials[0].author}</div>
+              <div className="text-muted">{testimonials[0].position}</div>
+              <div className="text-secondary font-medium">{testimonials[0].company}</div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
