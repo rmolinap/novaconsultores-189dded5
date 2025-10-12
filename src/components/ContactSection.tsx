@@ -23,7 +23,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm">Llámanos</p>
-                <p className="text-white font-medium">+52 (55) 1234-5678</p>
+                <p className="text-white font-medium">+52 (667) 224-0277</p>
               </div>
             </div>
 
@@ -33,7 +33,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm">Escríbenos</p>
-                <p className="text-white font-medium">hola@novaconsultores.mx</p>
+                <p className="text-white font-medium">info@novaconsultores.mx</p>
               </div>
             </div>
 
