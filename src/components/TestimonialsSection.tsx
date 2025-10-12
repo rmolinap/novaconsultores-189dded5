@@ -4,7 +4,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote: "Nova Consultores transformó completamente nuestros procesos logísticos. Ahora tenemos visibilidad total de inventarios y hemos reducido errores en un 90%.",
-      author: "María González",
+      author: "Daniella Vogliotti",
       position: "Directora de Operaciones",
       company: "LogiTech México"
     },
