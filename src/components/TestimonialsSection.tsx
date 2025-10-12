@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Antes de trabajar con Nova, procesar los documentos de embarque nos tomaba horas cada día. Ahora, gracias a la automatización que implementaron con n8n, los correos con facturas y packing lists se procesan automáticamente y se organizan en Google Drive con solo llegar. El ahorro de tiempo y errores ha sido impresionante.",
+      quote: "Antes de trabajar con Nova, procesar los documentos de embarque nos tomaba horas cada día. Ahora, gracias a la automatización que implementaron, los correos con facturas y packing lists se procesan automáticamente y se organizan en Google Drive con solo llegar. El ahorro de tiempo y errores ha sido impresionante.",
       author: "Daniella Vogliotti",
       position: "Logistics Specialist",
       company: "Kasmart USA Inc."
