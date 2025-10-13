@@ -52,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
     // TODO: Replace with your actual email address
     const notificationEmailResponse = await resend.emails.send({
       from: "Nova Automation <onboarding@resend.dev>",
-      to: ["tu-email@ejemplo.com"], // Replace with your email
+      to: ["info@novaconsultores.mx"],
       subject: `Nueva Solicitud de Consultoría - ${name}`,
       html: `
         <h1>Nueva solicitud de consultoría</h1>
