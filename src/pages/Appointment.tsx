@@ -43,17 +43,39 @@ const Appointment = () => {
   const onSubmit = async (data: AppointmentFormValues) => {
     setIsSubmitting(true);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success("¡Cita agendada exitosamente! Te contactaremos pronto.");
-    setIsSubmitting(false);
-    
-    // Reset form
-    form.reset();
-    
-    // Navigate back after 2 seconds
-    setTimeout(() => navigate("/"), 2000);
+    try {
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const { error } = await supabase.functions.invoke('send-appointment-email', {
+        body: {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          date: format(data.date, "PPP"),
+          message: data.message,
+        },
+      });
+
+      if (error) {
+        console.error("Error sending email:", error);
+        toast.error("Hubo un error al enviar tu solicitud. Por favor intenta de nuevo.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      toast.success("¡Cita agendada exitosamente! Te contactaremos pronto.");
+      
+      // Reset form
+      form.reset();
+      
+      // Navigate back after 2 seconds
+      setTimeout(() => navigate("/"), 2000);
+    } catch (error) {
+      console.error("Error:", error);
+      toast.error("Hubo un error al enviar tu solicitud. Por favor intenta de nuevo.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
